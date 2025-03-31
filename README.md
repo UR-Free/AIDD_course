@@ -1,6 +1,29 @@
 # AIDD_course
 materials for AIDD course
 
+## Server connect
+```bash
+ssh scw6ciu@NC-N40@ssh.paracloud.com -p 2222
+# RFDiffusion_520
+```
+
+## Slurm usage
+```bash
+salloc -p gpu_4090 -N1 -n6 --gpus=1
+```
+
+```bash
+#!/bin/bash
+#SBATCH -o job.%j.out
+#SBATCH -p gpu_4090
+#SBATCH -J submit_test
+#SBATCH --nodes=1 
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=6
+#SBATCH --gpus=1
+#SBATCH -t 00:10:00  # 10 minute runtime
+```
+
 ## Configure a jupyter notebook and start it
 ```bash
 docker run -it --gpus all --name jpt_test --network=host -v /home:/home image_name:tag bash
@@ -47,27 +70,3 @@ ifconfig
 ```
 
 then input the IP:8888 in your local web browser (google chrome usually works better)
-
-
-## Test the availability of torch GPU usage
-```bash
-import torch
-
-def test_pytorch_gpu():
-    print("PyTorch version:", torch.__version__)
-    gpu_available = torch.cuda.is_available()
-    print("CUDA available:", gpu_available)
-    
-    if gpu_available:
-        device = torch.device("cuda")
-        print("Using device:", torch.cuda.get_device_name(0))
-        
-        # Create a random tensor and move it to the GPU
-        x = torch.rand(3, 3).to(device)
-        print("Tensor on GPU:", x)
-    else:
-        print("CUDA is not available. Running on CPU.")
-        
-if __name__ == "__main__":
-    test_pytorch_gpu()
-```
