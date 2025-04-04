@@ -4,7 +4,6 @@ materials for AIDD course
 ## Server connect
 ```bash
 ssh scw6ciu@NC-N40@ssh.paracloud.com -p 2222
-# RFDiffusion_520
 ```
 
 ## Slurm usage
