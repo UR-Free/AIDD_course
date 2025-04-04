@@ -10,5 +10,8 @@ Refer to https://github.com/PKUfjh/AF_Cluster
 ## Run Alphaflow
 Refer to https://github.com/PKUfjh/alphaflow
 
+## Run Bioemu
+Refer to https://github.com/PKUfjh/bioemu
+
 ## Run UFConf
 Refer to https://github.com/PKUfjh/Uni-Fold/tree/ufconf
