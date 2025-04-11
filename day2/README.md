@@ -15,3 +15,6 @@ Refer to https://github.com/PKUfjh/bioemu
 
 ## Run UFConf
 Refer to https://github.com/PKUfjh/Uni-Fold/tree/ufconf
+
+## Run AF2Rank
+Refer to https://github.com/PKUfjh/AF2Rank
