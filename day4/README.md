@@ -1,8 +1,17 @@
 # AIDD_course
 Day 4 course
 
+```bash
+# 首先更新RFdiffusion和dl_binder_design文件夹
+cd RFdiffusion
+git pull
+cd dl_binder_design
+git pull
+```
+
 ## TNFR binder design
 ```bash
+# TNFR binder design
 cd RFdiffusion/examples
 # free diffusion of 120 residues binder to TNFR
 conda activate SE3nv
