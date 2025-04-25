@@ -33,5 +33,11 @@ cp design_tnfr_extended_2_dldesign_3_af2pred.pdb RFdiffusion/examples/input_pdbs
 ```
 
 ## MSA subsampling for transporter
+```bash
+see https://github.com/PKUfjh/af2_conformations
+```
 
 ## MSA clustering for KaiB
+```bash
+see https://github.com/PKUfjh/AF_Cluster
+```
