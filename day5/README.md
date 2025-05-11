@@ -1,5 +1,5 @@
 # AIDD_course
-Day 4 course
+Day 5 course
 
 ## DiffDock
 see https://github.com/UR-Free/DiffDock
