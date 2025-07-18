@@ -11,7 +11,9 @@ pip install "colabfold[alphafold-minus-jax]"
 pip install --upgrade tensorflow
 pip install silence_tensorflow
 git clone git@github.com:sokrypton/ColabFold.git
-pip install .
+cd ColabFold
+# pip install . seems not work for me, change to below
+pip install . --trusted-host pypi.org --trusted-host files.pythonhosted.org
 pip install "colabfold[alphafold]"
 ```
 
